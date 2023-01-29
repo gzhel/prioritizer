@@ -1,6 +1,8 @@
 // working for array of numbers, strings, boolean
 
-function prioritize(items) {  
+type Item = string | number;
+
+function prioritize(items: Item[]) {  
   const hashMap = {};
   
   for (let item of items) {
