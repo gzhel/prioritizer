@@ -5,7 +5,7 @@ function prioritize(items) {
   
   for (let item of items) {
     if (item in hashMap) {
-      hashMap[item] = hashMap[item] + 1;
+      hashMap[item] += 1;
     } else {
       hashMap[item] = 1;
     }
@@ -14,6 +14,4 @@ function prioritize(items) {
   return hashMap;
 }
 
-module.exports = {
-  prioritize
-};
+module.exports = { prioritize };
