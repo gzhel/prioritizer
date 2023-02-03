@@ -1,8 +1,6 @@
 // working for array of numbers, strings, boolean
 
-type Item = string | number;
-
-function prioritize(items: Item[]) {  
+function prioritize(items) {
   const hashMap = {};
   
   for (let item of items) {
@@ -15,3 +13,7 @@ function prioritize(items: Item[]) {
   
   return hashMap;
 }
+
+module.exports = {
+  prioritize
+};
